@@ -1,0 +1,35 @@
+{
+  "name": "restock-relay",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --experimental-strip-types tests/run.ts",
+    "test:e2e": "node tests/e2e-api.mjs",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@next/env": "^16.4.4",
+    "@hot-labs/near-connect": "^0.12.0",
+    "drizzle-orm": "^0.45.4",
+    "lucide-react": "^0.468.0",
+    "next": "^16.4.4",
+    "postgres": "^3.4.7",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "drizzle-kit": "^0.31.7",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@esbuild-kit/esm-loader": "npm:tsx@^4.23.15"
+  }
+}
